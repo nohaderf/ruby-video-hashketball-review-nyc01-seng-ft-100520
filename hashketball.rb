@@ -141,6 +141,9 @@ def num_points_scored(player_name)
   end
 end
 
+# Build a method, shoe_size, that takes in an argument of a player's name and returns the shoe size for that player.
+
 def shoe_size(player_name)
-  game_hash.each do |team, team_info
+  game_hash.each do |team, team_info|
+  
 end
