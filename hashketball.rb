@@ -201,15 +201,15 @@ end
 
 # Build a method, big_shoe_rebounds, that will return the number of rebounds associated with the player that has the largest shoe size. 
 
-def big_shoe_rebounds
-  shoe_sizes = []
-  game_hash.each do |team, team_info|
-    team_info[:players].each do |player_info|
-      shoe_sizes << player_info[:shoe]
-    end
-      shoe_sizes.sort
-  end
-end
+# def big_shoe_rebounds
+#   shoe_sizes = []
+#   game_hash.each do |team, team_info|
+#     team_info[:players].each do |player_info|
+#       shoe_sizes << player_info[:shoe]
+#     end
+#       shoe_sizes.sort
+#   end
+# end
 
 
 def big_shoe_rebounds
