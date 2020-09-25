@@ -174,6 +174,7 @@ def team_names
 end
 
 # Build a method, player_numbers, that takes in an argument of a team name and returns an Array of the jersey numbers for that team.
+
 def player_numbers(team_name)
   jersey_array = []
   game_hash.each do |team, team_info|
@@ -186,4 +187,14 @@ def player_numbers(team_name)
   jersey_array
 end
 
-#
+# Build a method, player_stats, that takes in an argument of a player's name and returns a hash of that player's stats.
+
+def player_stats(player_name)
+  game_hash.each do |team, team_info|
+    team_info[:players].each do |player_info|
+      if team_info[:players] == player_name
+        return team_info[:players]
+      end
+    end
+  end
+end
