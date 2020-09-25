@@ -163,6 +163,15 @@ def team_colors(team_name)
   end
 end
 
+# Build a method, team_names, that operates on the game Hash to return an Array of the team names.
+
+def team_names
+  team_array = []
+  game_hash.each do |team, team_info|
+    team_array << team_info[:team_name]
+  end
+  team_array
+end
 
 # Build a method, player_numbers, that takes in an argument of a team name and returns an Array of the jersey numbers for that team.
 def player_numbers(team_name)
